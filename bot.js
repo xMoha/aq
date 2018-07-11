@@ -1,4 +1,5 @@
 const {Client, RichEmbed} = require('discord.js');
+const = require('discord.js');
 const fs = require('fs');
 const client = new Discord.Client();
 const prefix = '!'
