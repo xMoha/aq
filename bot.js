@@ -39,7 +39,7 @@ client.on('message', message => {
         .setAuthor(message.author.username,message.author.avatarURL)
         .addField(`نقاطك : ${points[message.author.id].points}`,'By : زعلان',   true)
         .setColor('RANDOM')
-        .setFooter('العاب وبس', client.user.avatarURL);
+        .setFooter('SFARI server', client.user.avatarURL);
         message.channel.sendEmbed(embed)
     };
     if (message.content == "فكك") {    
