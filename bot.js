@@ -232,3 +232,5 @@ m.edit({embed: new Discord.RichEmbed().setTitle('لديك 15 ثانيه للاج
             })
     }
     });
+	    
+	    });
