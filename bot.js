@@ -200,8 +200,8 @@ client.on('message', message => {
         if (err) console.error(err);
     });
 });
-
-let points = JSON.parse(fs.readFileSync('./Points.json'));
+    fs.writeFile('points.json', JSON.stringify(points), (err) => {
+        if (err) console.error(err);
 client.on('message', message => {
     if (!points[message.author.id]) points[message.author.id] = { 
         points: 0,
