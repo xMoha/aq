@@ -201,7 +201,6 @@ client.on('message', message => {
     });
 });
 
-const fs = require('fs');
 let points = JSON.parse(fs.readFileSync('./Points.json'));
 client.on('message', message => {
     if (!points[message.author.id]) points[message.author.id] = { 
