@@ -218,7 +218,7 @@ client.on('message', message => {
              setTimeout(function() {
 m.edit({embed: new Discord.RichEmbed().setTitle('لديك 15 ثانيه للاجابه بالجواب الصحيح').setThumbnail('https://images-ext-2.discordapp.net/external/lLOYcLfSQaNo_5Ex0I-gBD5lIW-FfRXO-W_-ZxSpYLA/https/i.imgur.com/iReHvIZ.png?width=100&height=100')})
              }, 1000)
-            message.channel.awaitMessages(filter, { maxMatches: 1, time: 10000, errors: ['time'] })
+            message.channel.awaitMessages(filter, { maxMatches: 1, time: 100000, errors: ['time'] })
             .then((collected) => {
             message.channel.send(`${collected.first().author} ✅ **لقد قمت بكتابة الايموجي بالوقت المناسب**`);
             console.log(`[Game] ${collected.first().author} Answered with the correct answer`);
